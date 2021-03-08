@@ -22,8 +22,266 @@
         </div>
     </nav>
     <h1> HTML </h1>
-    <p> This page will be dedicated to learning HTML</p>
-    <p> during the Front-End Web Development Course </p>
+    <p> This page will be dedicated to learning HTML<br>
+    <p> during the Front-End Web Development Course <br>
+
+    <h2>Intro to HTML </h2>
+    <ul>
+        <li> HTML stands for hypertext markup language
+        <li> HTML is the building block of the web
+        <li> Organizes text, pictures on web
+        <!-- &lt = left tag, &gt = right tag -->
+        <li> &lt!doctype html&gt : All web documents start with this. Tells browser to render HTML <br>
+        <li> &lthtml&gt and &lt/html&gt : Starts after doctype tag, ends at end of HTMl document. Everything in between is HTML code <br>
+        <li> &ltbody&gt and &lt/body&gt : Where most content goes. Not actually required, as page assumes other content is body <br>
+        <li> But good practice to do so.
+        <li> &lthead&gt section usually comes before the &ltbody&gt.
+        <li> 2 different metaphors:
+        <ul class="sub-ul">
+            <li> HTML is the skeleton / foundation
+            <li> CSS is the skin / style
+            <li> JS is the brain / functionality and behavior
+        </ul>
+    </ul>
+
+    <h2>Text Editors </h2>
+    <ul>
+        <li> Program used to open HTML documents
+        <li> Create/Modify many docs, including html
+        <li> Integrated Development Environments (IDE's) - more advanced text editors with more features
+        <li> HTML documents can be opened in 2 ways: 
+            <ul class="sub-ul">
+                <li>Text editor - sees source code</li>
+                <li>Browser - interprets source code</li>
+            </ul>
+        <li>Options include:</li>
+            <ul class="sub-ul">
+                <li>Visual Studio Code</li>
+                <li>Atom</li>
+                <li>Sublime Text</li>
+                <li>JetBrains</li>
+                <li>NotePad++</li>
+            </ul>
+    </ul>
+
+    <h2>Text Elements I </h2>
+    <ul>
+        <li> A HTML element is formed using HTML tags</li>
+        <li> Basic structure consists of 4 key items</li>
+        <ol>
+            <li>Opening/Left Tag</li>
+            <li>Content - b/w opening and closing tag</li>
+            <li>Closing/Right tag </li>
+            <li>(Optional) - Attribute name (e.g. id or class) and value</li>
+        </ol>
+        <li> 2 Types of of HTML Elements:
+        <ul class="sub-ul">
+            <li>Block Elements</li>
+                <ul class="sub-sub-ul">
+                    <li>&ltp&gt Paragraphs</li>
+                    <li>&ltli&gt Lists</li>
+                    <li>&lth1&gt to &lth6&gt Headings</li>
+                    <li>&ltarticle&gt Articles</li>
+                    <li>&ltsection&gt Sections</li>
+                    <li>&ltblockquote&gt Long quotes</li>
+                    <li>&ltdiv&gt div Often used as a container for other HTML elements</li>
+                    <li>Block elements structure main parts of page, dividing content into coherent blocks</li>
+                    <li>Block-level elements always starts on a new line and takes up FULL width available</li>
+                </ul>
+            <li>Inline Elemennts</li>
+                <ul class="sub-sub-ul">
+                    <li>&lta&gt Links</li>
+                    <li>&ltem&gt Emphasized words</li>
+                    <li>&ltstrong&gt Important words</li>
+                    <li>&ltspan&gt Inline element used to markup a part of a text or part of document</li>
+                    <li>Inline elements meant to affect text and give it fx or meaning. Usually single or few words.</li>
+                    <li>Does not start on a new line and only take sup as muhc width as necessary</li>
+                </ul>
+        </ul>
+        
+    </ul>
+
+    <h2>Text Elements II </h2>
+    <h3>Headings</h3>
+    <ul>
+        <li>6 distinct headings</li>
+        <ul class="sub-">
+            <li>h1 - introduces topic that web page is all about</li>
+            <li>h2 - describes main topic covered on webpage</li>
+            <li>h3 to h6 - sub-headings</li>
+            <li>Visual impaired use headers, so important to structure properly!</li>
+        </ul>
+    </ul>
+    <h3>Pargraphs</h3>
+    <ul>
+        <li>Paragraph element is most used HTML element, default-block level element and quick to write</li>
+    </ul>
+    <h3>Spans</h3>
+    <ul>
+        <li>Generic wrapper used to gorup text, styling function</li>
+        <li>Example, this <span style="color:red">text</span> has been styled using the span tag</li>
+    </ul>
+    <h3>Blockquotes</h3>
+    <ul>
+        <li>Blockquotes are used to identify a citation
+        <li> Here is an example:
+            <blockquote cite="https://www.wikiwand.com/en/Scooby-Doo_(character)">
+                <p>Ruh-roh--RAGGY!!!</p>
+                <footer>—Scooby Doo, <cite>Mystery Incorporated</cite></footer>
+            </blockquote>
+        </li>    
+    </ul>
+
+    <h3>Line Breaks</h3>
+    <ul>
+        <li>Spacing between code in HTML file does not affect positioning of elements in browser</li>    
+        <li>To accomplish line breaks, can use the &ltbr&gt tag</li>
+        <li>&ltbr&gt tag can be used within the opening and closing p tag</li>
+    </ul>
+
+    <h2>HTML Lists </h2>
+    <h3>Unordered Lists</h3>
+    <ul>
+        <li>Lists items in no particular order, with bullet points</li>
+        <li>Uses the &ltul&gt and &lt/ul&gt to open and close ul list</li>
+        <li>Uses the &ltli&gt and &lt/li&gt tags for each list item</li>
+        <li>Here is an example or an unordered list:</li>
+            <ul>
+                <li>dog</li>
+                <li>cat</li>
+                <li>racoon</li>
+            </ul>
+    </ul>
+    <h3> Ordered Lists </h3>
+    <ul>
+        <li>Lists items in a specific order</li>
+        <li>Uses the &ltol&gt and &lt/ol&gt to open and close ol list</li>
+        <li>Uses the &ltli&gt and &lt/li&gt tags for each list item</li>
+        <li>Here is an example of an ordered list</li>
+    </ul>
+    <ol>
+        <li>Take out the recycling</li>
+        <li>Go for a run!</li>
+        <li>Pickup baby from daycare</li>
+    </ol>
+
+    <h2>Attributes </h2>
+    <h3>Images </h3>
+    <ul>
+        <li>src attribute - URL or file location</li>
+        <li>alt attribute - image's alternative text (description for those with accessibility needs)</li>
+        <li>width and height attributes - used to adjust image size</li>
+        <li>images are self-closing - add slash at end, instead of another &lt/img&gt</li>
+        <li>Example: 
+            &ltimg src="images/nefertiti.jpg" alt="A smiling labrador retriever" width="480" height="320 &gt
+        </li>
+    </ul>
+    <h3>Links</h3>
+    <ul>
+        <li>Inline element written with a &lta&gt tag. href attribute (hypertext reference) defines definition of link</li>
+        <li>3 types of destinations you can define</li>
+            <ul>
+                <li>anchor targets - navigate within same page</li>
+                <li>relative URLS - navigate within same website</li>
+                <li>absolute URLS - navigation to another website</li>
+            </ul>
+        <li>Can also use additional attribute beside "a" and "href"</li>
+            <ul>
+                <li>rel attribute - specifies rleationship b/w current and linked document</li>
+                <li>target attribute - specifies where to open linked document</li>
+                <li>target="_blank" - opens link in NEW window</li>
+            </ul>
+    </ul>
+    <h3>Comments</h3>
+    <ul>
+        <li>Writes code without hcanging how website displays</li>
+        <li>Ignored by browser and only helpful to coders</li>
+        <li>Comment starts with &lt!-- and ends with --&gt </li>
+    </ul>
+    <h3>Self-Enclosing Elements</h3>
+    <ul>
+        <li>Some elements only have an opening tag</li>
+        <li>These include:</li>
+        <ul>
+            <!-- line break -->
+            <li>&ltbr&gt</li>
+            <!-- image -->
+            <li>&ltimg src="panda.png" alt="Description"&gt</li>
+            <!-- text input -->
+            <li>&ltinput type="text"&gt</li>
+        </ul>
+    </ul>
+    <h3>Other Attributes</h3>
+    <ul>
+        <li>class="apple" can be styled using CSS .apple {color:red}</li>
+        <li>id="apple" can be styled using CSS #apple {color:red}</li>
+    </ul>
+
+    <h2>The DOM</h2>
+    <h3>Intro to the DOM:</h3>
+    <ul>
+        <li>DOM = Document Object Model</li>
+        <li>Model that the web document is presented as</li>
+        <li>Like a tree with branches that end with a node</li>
+        <li>Each node contains objects</li>
+        <li>Holds all the elements in the order that we place them</li>
+        <li>Starts with parent items that branch into child items</li>
+        <li>Starts with HTML (top node - level 1), then head and body (level 2), etc.. (</li>
+    </ul>
+    <h3>Setting up an HTML file</h3>
+    <ul>
+        <li>&lt!DOCTYPE html&gt</li>
+            <ul>
+                <li>First line of HTML code, tells browser to expect HTML </li>
+                <li>Refers to HTML5, as the current standard</li>
+            </ul>
+        <li>&lthtml&gt</li>
+        <li>The Head</li>
+            <ul>
+                <li>&lthead&gt - The head element goes above the body tag</li>
+            </ul>
+        <li>Metadata</li>
+            <ul>
+                <li>&ltmetadata&gt -The head element contains the metadata tag</li>
+                <li>Displays info about page not displayed directly on web page</li>
+                <li>Contains metadata of the webpage</li>
+            </ul>
+        <li>Title</li>
+            <ul>
+                <li>&lttitle&gt - Title tag always inside the head tag</li>
+                <li>This title is dipplayed in the brower's title bar (or in the tab's title)</li>
+            </ul>
+        <li>Body</li>
+            <ul>
+                <li>Contains various types of content including - text, images, buttons</li>
+            </ul>
+      
+    </ul>
+    <h3>Hierachy</h3>
+    <ul>
+        <li>When element is contained inside another element, it is considered the "child" of the element</li>
+        <li>Child elements are nested inside of the parent element</li>
+        <li>Multiple levels of nesting, means analogy can be extended to grandchildren, great-grandchildren, etc...</li>
+        <li>Relationships b/w ancestor and descendent elements = hierarchy</li>
+        <li>Child elements inherit behavior and styling from their parent elements</li>
+    </ul>
+    <h3>Semantic Elements</h3>
+    <ul>
+        <li>Structure elements used to organize main parts of page. Usually contain other HTML elements</li>
+        <li>Typical website includes:</li>
+        <ul>
+            <li>header - 1st leement, includes logo and tagline</li>
+            <li>nav - list of links that go to different parts of website</li>
+            <li>h1 - title of the page</li>
+            <li>article - main content of the page, like a blog post</li>
+            <li>footer - last element of page, located at bottom</li>
+        </ul>
+    </ul>
+
+
+
+
+
     <script src="app.js"></script>
 </body>
 </html>
@@ -36,3 +294,4 @@ Title tag required in HTML docs - important for SEO - defines title in browser t
 link - links to css stylesheet
 script - links to Javascript document
 Basic Headers and paragraph set up -->
+
