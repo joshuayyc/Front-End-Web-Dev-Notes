@@ -48,6 +48,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.h1-center {
+    text-align: center;
+}
+
+.p-center {
+    text-align: center;
+}
+
 /* General Page Title Styling */
 h1 {
     text-align: left;

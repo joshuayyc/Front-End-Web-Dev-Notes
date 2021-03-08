@@ -8,7 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Type Selector */
+        button {
+            background-color: coral;
+            height:150px;
+            width:300px;
+            color:white;
+        }
+        /* Class Selector */
+        .title {
+            font-size:30px;
+            color:tomato;
+            font-style: italic;
 
+        }
+        /* ID Selector */
+        #content {
+            font-size:30px;
+            color:violet;
+        }
+
+        /* Pseudo-class Selector */
+        button:hover {
+                    color: coral;
+                    background: white;
+                }
+
+    </style>
 </head>
 <body>
     <nav>
@@ -21,9 +48,109 @@
             </ul>
         </div>
     </nav>
-    <h1> CSS </h1>
-    <p> This page will be dedicated to learning CSS</p>
-    <p> during the Front-End Web Development Course </p>
+    <h1 class="h1-center"> CSS </h1>
+    <p class="p-center"> This page will be dedicated to learning CSS during the Front-End Web Development Course </p>
+    
+    <h2>CSS Selectors</h2>
+    <ul>
+        <li>Allows us to select or identify specific HTML elements</li>
+        <li>All use the same workflow: select element to style, create object, write CSS rule for properties</li>
+        <li>3 most popular ones:</li>
+        <ul>
+            <li>Type/Tag Selector</li>
+            <ul>
+                <li>Selects specific "types" of HTML elements, e.g. button, HTML tags, etc...</li>
+                <li>The structure is 2 curly braces, followed immediately after the selector </li>
+                <li>Any CSS property can go inside the curly braces to style the selected elements</li>
+                selector { <br>
+                    color: #02b3e4 <br>
+                    property: value <br>
+                } <br>
+            </ul>
+            The following example is a button styled  below: <br>
+            &lt button &gt GO GO Gadget... &lt /button &gt <br>
+            &lt style &gt button { <br>
+                background-color: coral; <br>
+                height:150px; <br>
+                width:300px;<br>
+                color:white;<br>
+            }   &lt /style &gt<br>
+
+            <button>GO GO Gadget... </button>
+       
+
+            <li>ID</li>
+            <ul>
+                <li>ID selectors selected using a # followed by the ID name</li>
+                <li></li>
+                &ltp id ="content"&gt This section is styled using the ID selector&lt/p&gt<br>
+
+                #content { <br>
+                    font-size:30px; <br>
+                    color:violet; <br>
+                } <br>
+                <p id ="content"> This section is styled using the ID selector</p>
+
+            </ul>
+            <li>Class</li>    
+            <ul>
+                <li>Styles elements by selecting the class attribute</li>
+                <li>Class selectors selected using a period(.) followed by the Class name </li>
+                <li></li>
+                &ltdiv class="title"&gtThis section is styled using the Class selector&lt/div&gt<br>
+                .title {<br>
+                    font-size:30px; <br>
+                    color:tomato; <br>
+                    font-style: italic; <br>
+                } <br>
+                <div class="title">This section is styled using the Class selector</div>
+            </ul>
+
+            <li>Pseudo-classes</li>
+            <ul>
+                <li>CSS Pseudo-classes is a keyword added to a selector that specifies speical state of selected element(s)</li>
+                <li>Example, :hover can be used to change the button's color when user points or hovers over it</li>
+                button:hover { <br>
+                    color: coral; <br>
+                    background: white; <br>
+                } <br>
+            </ul>
+            <li>Attributes Selectors</li>
+            <ul>
+                <li>Attribute Selectors are a special kind of selectors that match elements based on their attributes and attribute values</li>
+                <li>Generic syntax consists of square brackets [] containing attribute followed by optional condition to match against value of attribute</li>
+                <li>Divided into 2 categories depending on the way they match attribute value</li>
+                <ul>
+                    <li>Presence and value attribute selectors, and</li>
+                    <li>Substring value attribute selectors</li>
+                </ul>
+                <li>These attirbute selectors try to match exact attribute value</li>
+                <ul>
+                    <li>[attr]This selector will select all elements with the attribute attr, whatever its value.</li>
+                    <li>[attr=val] This selector will select all elements with the attribute attr, but only if its value is val.</li>
+                    <li>[attr~=val] This selector will select all elements with the attribute attr, but only if val is one of a space-separated list of words contained in attr's value</li>
+
+                </ul>
+            </ul>
+            <li>Multiple Selectors</li>
+            <ul>
+                <li>To style to all of our headings, don't have to use redundant rules, since not scalable</li>
+                <li>Instead, can select multiple HTML elements in same CSS rule by separating htem with commas.</li>
+                h1, <br>
+                h2, <br>
+                h3, <br>
+                h4, <br>
+                h5, <br>
+                h6 { <br>
+                font-family: "Helvetica", "Arial", sans-serif; <br>
+                } <br>
+                <li>This CSS rule defines font used for all headings. Easy to change it all in 1 place.</li>
+            </ul>
+    </ul>
+    
+    <h2>Linking CSS - Connecting CSS to HTML</h2>
+    
+    
     <script src="app.js"></script>
 </body>
 </html>
